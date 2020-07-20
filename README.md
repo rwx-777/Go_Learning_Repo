@@ -150,6 +150,25 @@ for i := 0; i < 10; i++ {
 }
 ```
 
+### Concurrency - Goroutines
+To exeucte code concurrently we can use *goroutines.*
+Some people call them lightweight threads, because the cost of creating then is minimal.
+
+Example:
+```
+func f() {
+	fmt.Println("f function")
+}
+
+func main() {
+	go f()
+	time.Sleep(1*time.Second)
+	fmt.Println("main function")
+}
+```
+
+
+
 
 
 
