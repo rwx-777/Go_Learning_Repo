@@ -9,6 +9,7 @@ This is my Go Learnig Repository for all fellow Go noobs. Focused on InfoSec.
 ## How to run and compile Go ?
 ```
 $go run hello.go
+```
 
 will execute the current programm without needing to compile it
 
