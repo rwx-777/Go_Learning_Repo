@@ -54,4 +54,52 @@ y := int(42)
 ```
 
 ### Slices and Maps
+Go also has more complex data types like slices and maps.
+Slices are like arrays that you can dynamically resize and pass to fucntions.
+Maps are associative arrays, unordered lists of key/value pairs that lets you quickly look up values for a unique key.
+
+Example of a Slice:
+```
+var s = make([]string, 0)
+s = append(s, "hek")
+```
+
+Example of a Map:
+```
+var m = make(map[string]string)
+m["some key"] = "some value"
+```
+
+### Pointers, Structs and Interfaces
+Pointers in Go work like they do in C. We use the &-operator to retrieve the memory address of some variable, and the * -operator to dereference the address.
+
+Pointer Example:
+
+```
+var count = int(42)
+var ptr = &count
+fmt.Println(*ptr)
+*ptr = 100
+fmt.Println(count)
+```
+
+Struct Example:
+
+```
+type Person struct {
+  Name string
+  Age int
+}
+func (p *Person) SayHello() {
+  fmt.Println("Hello,", p.Name)
+}
+func main() {
+  var guy = new (Person)
+  guy.Name = "Dave"
+  guy.Age = 21
+  guy.SayHello()
+}
+```
+
+
 
