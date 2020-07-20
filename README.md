@@ -78,8 +78,9 @@ Pointer Example:
 ```
 var count = int(42)
 var ptr = &count
-fmt.Println(*ptr)
-*ptr = 100
+fmt.Println(ptr)  //prints memory address of count
+fmt.Println(*ptr) //prints the value of count
+*ptr = 100        //writes new value into count
 fmt.Println(count)
 ```
 
