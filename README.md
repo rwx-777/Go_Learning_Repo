@@ -120,6 +120,36 @@ func main() {
 ```
 
 
+### Control Structures
+
+Basic If-else Statement
+```
+if z == 1 {
+		fmt.Println("Z is equal to 1")
+} else {
+		fmt.Println("Z is not equal to 1")
+}
+```
+Basic Switch Statement
+```
+var x = "foo"
+switch x {
+	case "foo":
+		fmt.Println("found foo")
+	case "bar":
+		fmt.Println("Found bar")
+	default:
+		fmt.Println("Default case")
+}
+```
+Go doesnt hava a do or while loop. Only a for loop.
+For Loop Example:
+```
+for i := 0; i < 10; i++ {
+  fmt.Println(i)
+}
+```
+
 
 
 
