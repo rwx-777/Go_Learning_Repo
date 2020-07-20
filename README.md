@@ -14,19 +14,22 @@ $go run hello.go
 will execute the current programm without needing to compile it
 
 To create a binary we need this command:
-
+```
 $go build hello.go
 
+```
 Go binaries are quite big by default we can use these parameters to make them smaller:
-
+```
 $go build -ldflags "-w -s"
 
+```
 ## How do we cross compile in Go ?
 
 This command will build an executable for linux 64 bit systems:
-
+```
 $GOOS="linux" GOARCH="amd64" go build hello.go
 
+```
 Nice !
 
 ### Other useful Go Commands
@@ -43,13 +46,15 @@ Nice !
 primitive types include: bool, string, int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64, uintptr, byte, rune, float32, float64, complex64, complex128
 
 Declaring a variable:
-//var x = "Hello World"
+```
+var x = "Hello World"
 or
-//y := "Hello World"
+y := "Hello World"
 
-//var x = int(42)
+var x = int(42)
 or 
-//y := int(42)
+y := int(42)
+```
 
 ### Slices and Maps
 
