@@ -102,5 +102,24 @@ func main() {
 }
 ```
 
+Example of a interface:
+
+```
+type Friend interface {
+  SayHello()
+}
+
+func Greet (f Friend) {
+  f.SayHello()
+}
+
+func main() {
+  var guy = new (Person)
+  guy.Name = "Gary"
+  Greet(guy)
+```
+
+
+
 
 
