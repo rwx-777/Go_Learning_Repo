@@ -168,6 +168,35 @@ func main() {
 ```
 
 
+### Error Handling
+
+
+```
+type error interface {
+	Error() string
+}
+
+//Custom Error Message
+type myError string
+func (e myError) Error() string {
+	return string(e)
+}
+```
+
+Error handling pattern:
+```
+func foo() error {
+	return errors.New("Some Error Occured")
+}
+
+func main() {
+	if err := foo(); err != nil {
+	//handle the error
+	}
+}
+```
+
+
 
 
 
