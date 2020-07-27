@@ -19,6 +19,9 @@ func main() {
 		go worker(ports, &wg)
 	}
 	for i := 1; i <= 1024; i++ {
-
+		wg.Add(1)
+		ports <- i
 	}
+	wg.Wait()
+	close(ports)
 }
