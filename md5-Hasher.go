@@ -15,5 +15,5 @@ func createHash(key string) string {
 }
 
 func main() {
-	createHash("Carrie")
+	createHash("text")
 }
